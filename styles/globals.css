@@ -33,12 +33,12 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   /* scroll-padding-top: 100px; */
 }
 h1,h2,h3,h4,h5,h6
 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 a,
 button {
