@@ -6,19 +6,18 @@
     position: sticky;
     top: 0;
     background-color: #fff;
-    padding: 0 45px;
 }
 
 .navigationbar {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
 }
 
 .navigationbar h2 {
-    height: 16px;
+    /* height: 16px; */
     width: auto;
     justify-self: start;
 }
@@ -55,35 +54,162 @@
 }
 
 .menu_toggle {
-    justify-self: end;
-    margin-right: 25px;
+    display: none;
+    cursor: pointer;
+    justify-content: end;
+    align-items: end;
+}
+.cross{
     display: none;
 }
-
-.menu_toggle:hover {
-    cursor: pointer;
-}
-
-#mobile_menu.is_active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-#mobile_menu.is_active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-#mobile_menu.is_active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-
 /* header */
 
 
+/* Footer */
+.footer_distributed{
+	background: #000;
+	box-sizing: border-box;
+	width: 100%;
+    padding: 80px 0;
+}   
+
+.footer_rows{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+/* The company logo */
+
+.footer_distributed h3{
+	color:  #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+	margin: 0;
+}
+
+.footer_distributed h3 span{
+	color:  lightseagreen;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer links */
+
+.footer_distributed .footer_links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer_distributed .footer_links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+	color:  #bcbcbc;
+}
+
+
+
+
+.footer_distributed .footer_center p{
+	display: inline-block;
+	color: #bcbcbc;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_distributed .footer_center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.footer_distributed .footer_center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.footer_distributed .footer_links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  padding: 0 15px;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer_distributed .footer_links .link_1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+
+.footer_distributed .footer_company_about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_distributed .footer_company_about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_distributed .footer_icons{
+	margin-top: 25px;
+}
+
+.footer_distributed .footer_icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer_company_about p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+/* footer */
+@media only screen and (max-width: 1199px) {
+    .footer_rows{
+        grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    }
+}
 @media only screen and (max-width: 720px) {
 
     /* MOBILE NAVIGATION */
 
+ 
     .navigationbar ul {
         display: flex;
         flex-direction: column;
@@ -95,17 +221,16 @@
         background-color: #000;
         width: 80%;
         height: 100vh;
+        z-index: 999;
         transform: translateX(-101%);
         transition: 0.5s ease-in-out;
         text-align: left;
         overflow: hidden;
     }
     
-    
     .navigationbar li:first-child {
-        margin-top: 50px;
-        border-top: 1px solid rgb(32 32 32);
-
+        border-bottom: 1px solid rgb(32 32 32);
+        border-left: 1px solid rgb(32 32 32);
     }
     
     .navigationbar li a {
@@ -118,13 +243,69 @@
         font-size: 15px;
     }
 
-    .menu_toggle,
-    .bar {
-        display: block;
-        cursor: pointer;
+    .menu_toggle{
+        display: flex;
     }
 
     .nav_active {
         transform: translate(0%) !important;
     }
+    .cross{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+    }
+    .nav_overlay {
+        background-color: #2f2f2f45;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+
+    /* MOBILE FOOTER */
+    .footer_distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer_distributed .footer_left,
+	.footer_distributed .footer_center,
+	.footer_distributed .footer_right{
+		display: block;
+		width: 100%;
+	}
+
+	.footer_distributed .footer_center i{
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+    .footer_distributed{
+        padding: 50px 0;
+    }
+    .footer_distributed h3{
+        font-size: 25px;
+    }
+    .footer_distributed .footer_links{
+        margin: 12px 0 ;
+    }
+    .footer_left,.footer_center{
+        margin-bottom: 20px;
+    }
+    .footer_center{
+        display: flex;
+        justify-content: center;
+    }
+    .footer_company_about p{
+        font-size: 13px;
+    }
+    .footer_links a{
+        font-size: 12px;
+    }
+    .footer_distributed .footer_links a:before {
+        padding: 0 7px;
+      }
+      
 }
