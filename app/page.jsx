@@ -14,6 +14,11 @@ export default function Home() {
             <h1>
               <strong>turning</strong> dreams into <strong>reality</strong>
             </h1>
+            <p>
+              We Provide You the most complete industrial solutions in the
+              century for the <br />
+              research,design & development of materials
+            </p>
             <Button extra={styles.banner_btn}>
               Get a Free Project Consultation
             </Button>
