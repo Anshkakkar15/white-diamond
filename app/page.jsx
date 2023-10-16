@@ -9,9 +9,9 @@ export default function Home() {
     <div className={styles.homePage}>
       <div className={styles.banner}>
         <div className="container-fluid">
-          <div data-aos="fade-up" className={styles.banner_home}>
+          {/* <div data-aos="fade-up" className={styles.banner_home}>
             <Image src={bannerHome} alt="home" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

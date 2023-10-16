@@ -1,154 +1,148 @@
 /* header */
 
 .nav_wrapper {
-    width: 100%;
-    position: -webkit-sticky;
-    position: fixed;
-    top: 0; 
-    left: 0;
-    z-index: 100;
-    height: auto;
+  width: 100%;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: auto;
 }
 
 .navigationbar {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    height: 70px;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 70px;
+  overflow: hidden;
 }
 
 .navigationbar h2 {
-    /* height: 16px; */
-    width: auto;
-    justify-self: start;
-    color: #fff;
+  /* height: 16px; */
+  width: auto;
+  justify-self: start;
+  color: #fff;
 }
 
 .navigationbar ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-self: end;
-
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: end;
 }
 
 .nav_items a {
-    color: #bcbcbc;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 0.3s ease-out;
-    font-family: 'Montserrat', sans-serif
+  color: #bcbcbc;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav_items a:hover {
-    color: lightseagreen;
+  color: lightseagreen;
 }
 
 .menu_toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #3f3f3f;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  width: 25px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_toggle {
-    display: none;
-    cursor: pointer;
-    justify-content: end;
-    align-items: end;
+  display: none;
+  cursor: pointer;
+  justify-content: end;
+  align-items: end;
 }
-.cross{
-    display: none;
+.cross {
+  display: none;
 }
 /* header */
 
-
 /* Footer */
-.footer_distributed{
-	background-color: #000;
-    background-image: linear-gradient(0deg, #00000000, #00000087), url('../assets/footer-bg.png');
-    background-repeat: no-repeat;
-    background-position:bottom right;
-    background-size: contain;
-	box-sizing: border-box;
-	width: 100%;
-    padding: 100px 0;
-}   
+.footer_distributed {
+  background-color: #000;
+  background-image: linear-gradient(0deg, #00000000, #00000087),
+    url("../assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 0;
+}
 
-.footer_rows{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-
+.footer_rows {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 /* The company logo */
 
-.footer_distributed h3{
-	color:  #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-	margin: 0;
+.footer_distributed h3 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  margin: 0;
 }
 
-.footer_distributed h3 span{
-	color:  lightseagreen;
-    font-family: 'Montserrat', sans-serif;
+.footer_distributed h3 span {
+  color: lightseagreen;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Footer links */
 
-.footer_distributed .footer_links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
+.footer_distributed .footer_links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
 }
 
-.footer_distributed .footer_links a{
-	display:inline-block;
-	line-height: 1.8;
-    font-weight:400;
-	text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-	color:  #bcbcbc;
-    font-size: 15px;
+.footer_distributed .footer_links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #bcbcbc;
+  font-size: 15px;
 }
 
-
-
-
-.footer_distributed .footer_center p{
-	display: inline-block;
-	color: #bcbcbc;
-    font-weight:400;
-	vertical-align: middle;
-	margin:0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+.footer_distributed .footer_center p {
+  display: inline-block;
+  color: #bcbcbc;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 
-.footer_distributed .footer_center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
+.footer_distributed .footer_center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 
-.footer_distributed .footer_center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
-    font-family: 'Montserrat', sans-serif;
-
+.footer_distributed .footer_center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer_distributed .footer_links a:before {
   content: "|";
-  font-weight:300;
+  font-weight: 300;
   font-size: 20px;
   left: 0;
   padding: 0 15px;
@@ -163,184 +157,182 @@
 
 /* Footer Right */
 
-
-.footer_distributed .footer_company_about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-    font-family: 'Montserrat', sans-serif;
+.footer_distributed .footer_company_about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-.footer_distributed .footer_company_about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 15px;
-	font-weight: 500;
-	margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+.footer_distributed .footer_company_about span {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.footer_distributed .footer_icons{
-	margin-top: 25px;
+.footer_distributed .footer_icons {
+  margin-top: 25px;
 }
 
-.footer_distributed .footer_icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-	margin-right: 3px;
-	margin-bottom: 5px;
+.footer_distributed .footer_icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
-.footer_company_about p{
-    margin-bottom: 0;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+.footer_company_about p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
-
 
 /* footer */
 @media only screen and (max-width: 1199px) {
-    .footer_rows{
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-    .footer_distributed .footer_center{
-		display: block;
-		width: 100%;
-	}
+  .footer_rows {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .footer_distributed .footer_center {
+    display: block;
+    width: 100%;
+  }
 
-    .footer_distributed{
-        padding: 60px 0;
-    }
-    .footer_distributed h3{
-        font-size: 27px;
-    }
-    .footer_distributed .footer_links{
-        margin: 12px 0 ;
-    }
-    .footer_left,.footer_center{
-        margin-bottom: 20px;
-    }
-    .footer_center{
-        display: flex;
-        justify-content: center;
-    }
-    .footer_center p{
-        font-size: 14px;
-    }
-    .footer_company_about p{
-        font-size: 13px;
-    }
-    .footer_links a{
-        font-size: 13px;
-    }
-    .footer_distributed .footer_links a:before {
-        padding: 0 10px;
-    }
+  .footer_distributed {
+    padding: 60px 0;
+  }
+  .footer_distributed h3 {
+    font-size: 27px;
+  }
+  .footer_distributed .footer_links {
+    margin: 12px 0;
+  }
+  .footer_left,
+  .footer_center {
+    margin-bottom: 20px;
+  }
+  .footer_center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer_center p {
+    font-size: 14px;
+  }
+  .footer_company_about p {
+    font-size: 13px;
+  }
+  .footer_links a {
+    font-size: 13px;
+  }
+  .footer_distributed .footer_links a:before {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .footer_rows{
-        grid-template-columns: 1fr 1fr;
-    }
-    .footer_right{
-        margin-top: 30px;
-        grid-column:1/-1;
-    }
-
+  .footer_rows {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_right {
+    margin-top: 30px;
+    grid-column: 1/-1;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  /* MOBILE NAVIGATION */
+  .footer_rows {
+    grid-template-columns: 1fr;
+  }
 
-    /* MOBILE NAVIGATION */
-    .footer_rows{
-        grid-template-columns: 1fr;
-    }
+  .navigationbar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 80%;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(-101%);
+    transition: 0.5s ease-in-out;
+    text-align: left;
+    overflow: hidden;
+  }
 
-    .navigationbar ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        position: fixed;
-        justify-content: start;
-        top: 0;
-        left: 0;
-        background-color: #000;
-        width: 80%;
-        height: 100vh;
-        z-index: 999;
-        transform: translateX(-101%);
-        transition: 0.5s ease-in-out;
-        text-align: left;
-        overflow: hidden;
-    }
-    
-    .navigationbar li:first-child {
-        border-bottom: 1px solid rgb(32 32 32);
-        border-left: 1px solid rgb(32 32 32);
-    }
-    
-    .navigationbar li a {
-        color: #BCBCBC;
-        display: block;
-        line-height: 3.125rem;
-        height: 4.125rem;
-        padding: 0.6rem 3.125rem 0 1.5rem;
-        border-bottom: 1px solid rgb(32 32 32);
-        font-size: 15px;
-    }
+  .navigationbar li:first-child {
+    border-bottom: 1px solid rgb(32 32 32);
+    border-left: 1px solid rgb(32 32 32);
+  }
 
-    .menu_toggle{
-        display: flex;
-    }
+  .navigationbar li a {
+    color: #bcbcbc;
+    display: block;
+    line-height: 3.125rem;
+    height: 4.125rem;
+    padding: 0.6rem 3.125rem 0 1.5rem;
+    border-bottom: 1px solid rgb(32 32 32);
+    font-size: 15px;
+  }
 
-    .nav_active {
-        transform: translate(0%) !important;
-    }
-    .cross{
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        padding: 10px;
-    }
+  .menu_toggle {
+    display: flex;
+  }
+
+  .nav_active {
+    transform: translate(0%) !important;
+  }
+  .cross {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
-    .footer_distributed{
-        padding: 50px 0;
-    }
-    .footer_distributed h3{
-        font-size: 25px;
-    }
-    .footer_distributed .footer_links{
-        margin: 12px 0 ;
-    }
-    .footer_left,.footer_center{
-        margin-bottom: 20px;
-    }
-    .footer_center{
-        display: flex;
-        justify-content: center;
-    }
-    .footer_center p{
-        font-size: 13px;
-    }
-    .footer_company_about p{
-        font-size: 13px;
-    }
-    .footer_links a{
-        font-size: 12px;
-    }
-    .footer_distributed .footer_links a:before {
-        padding: 0 7px;
-    }  
+  .footer_distributed {
+    padding: 50px 0;
+  }
+  .footer_distributed h3 {
+    font-size: 25px;
+  }
+  .footer_distributed .footer_links {
+    margin: 12px 0;
+  }
+  .footer_left,
+  .footer_center {
+    margin-bottom: 20px;
+  }
+  .footer_center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer_center p {
+    font-size: 13px;
+  }
+  .footer_company_about p {
+    font-size: 13px;
+  }
+  .footer_links a {
+    font-size: 12px;
+  }
+  .footer_distributed .footer_links a:before {
+    padding: 0 7px;
+  }
 }
