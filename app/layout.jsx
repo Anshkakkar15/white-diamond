@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.css";
 import Script from "next/script";
 import { Header } from "@/layout/header";
 import { Footer } from "@/layout/footer";
-
+import "bootstrap/dist/css/bootstrap.css";
+import { AosInit } from "@/components/AOS";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AosInit />
       <body className={inter.className}>
         <Header />
         {children}

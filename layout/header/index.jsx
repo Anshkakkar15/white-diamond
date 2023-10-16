@@ -33,7 +33,7 @@ export const Header = () => {
             onClick={() => setIsActive(true)}
             className={`${styles.menu_toggle}`}
           >
-            <Menu />
+            <Menu color="#fff" />
           </div>
           <ul className={`nav ${isActive ? styles.nav_active : null}`}>
             <li onClick={() => setIsActive(false)} className={styles.cross}>
