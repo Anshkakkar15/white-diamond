@@ -81,7 +81,16 @@ body {
 .container-fluid{
   padding: 0 40px !important ;
 }
-
+.web-primary-button{
+  padding: 10px 20px;
+  width: 275px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease-in-out;
+}
+.web-primary-button:hover{
+  box-shadow:inset 275px 0 0 lightseagreen;
+}
 @media only screen and (max-width:990px){
   .container-fluid{
     padding: 0 30px !important ;
@@ -91,9 +100,19 @@ body {
   .container-fluid{
     padding: 0 20px !important ;
   }
+  .web-primary-button {
+    padding: 8px 8px;
+    font-size: 13px;
+    width: 267px;
+  }
 }
 @media only screen and (max-width:575px){
   .container-fluid{
     padding: 0 10px !important ;
+  }
+  .web-primary-button {
+    padding: 8px 8px;
+    font-size: 12px;
+    width: 230px;
   }
 }
