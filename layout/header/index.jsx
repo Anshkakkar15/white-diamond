@@ -20,11 +20,7 @@ export const Header = () => {
   }, [isActive]);
 
   return (
-    <div
-      className={`${styles.nav_wrapper} ${
-        isActive ? styles.nav_overlay : null
-      }`}
-    >
+    <div className={`${styles.nav_wrapper}`}>
       <div className="container-fluid">
         <div className={styles.grad_bar}></div>
         <div className={styles.navigationbar}>
@@ -51,9 +47,6 @@ export const Header = () => {
             </li>
             <li className={styles.nav_items}>
               <a href="#">Work</a>
-            </li>
-            <li className={styles.nav_items}>
-              <a href="#">Services</a>
             </li>
             <li className={styles.nav_items}>
               <a href="#">Contact Us</a>
