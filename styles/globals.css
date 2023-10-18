@@ -79,7 +79,8 @@ body {
 
 
 .container-fluid{
-  padding: 0 40px !important ;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
 }
 .web-primary-button{
   padding: 10px 20px;
@@ -92,14 +93,33 @@ body {
 .web-primary-button:hover{
   box-shadow:inset 275px 0 0 lightseagreen;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 1700px){
+  .container-fluid {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+}
 @media only screen and (max-width:990px){
   .container-fluid{
-    padding: 0 30px !important ;
+    padding: 0 50px !important ;
   }
 }
 @media only screen and (max-width:767px){
   .container-fluid{
-    padding: 0 20px !important ;
+    padding: 0 30px !important ;
   }
   .web-primary-button {
     padding: 8px 8px;
@@ -109,7 +129,7 @@ body {
 }
 @media only screen and (max-width:575px){
   .container-fluid{
-    padding: 0 10px !important ;
+    padding: 0 15px !important ;
   }
   .web-primary-button {
     padding: 8px 8px;
@@ -117,3 +137,6 @@ body {
     width: 230px;
   }
 }
+
+
+

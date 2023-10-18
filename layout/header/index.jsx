@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 import styles from "@/styles/Layout.module.css";
 import { Menu, X } from "lucide-react";
@@ -40,16 +41,16 @@ export const Header = () => {
               <X color="#BCBCBC" />
             </li>
             <li className={styles.nav_items}>
-              <a href="#">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className={styles.nav_items}>
-              <a href="#">About</a>
+              <Link href="#">About</Link>
             </li>
             <li className={styles.nav_items}>
-              <a href="#">Work</a>
+              <Link href="#">Work</Link>
             </li>
             <li className={styles.nav_items}>
-              <a href="#">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>

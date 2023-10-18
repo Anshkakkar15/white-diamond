@@ -58,6 +58,27 @@
   color: #000;
 }
 
+.about_section{
+  margin-top: 100px ;
+  position: relative;
+}
+.img_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_content h2{
+    color: #000;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -3px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
 @media only screen and (max-width: 1400px) {
   .banner {
     height: 90vh;
