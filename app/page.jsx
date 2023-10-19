@@ -25,7 +25,7 @@ export default function Home() {
             </Button>
           </div>
           <div data-aos="fade-up" className={styles.banner_home}>
-            <Image src={bannerHome} alt="home" />
+            {/* <Image src={bannerHome} alt="home" /> */}
           </div>
         </div>
       </div>
