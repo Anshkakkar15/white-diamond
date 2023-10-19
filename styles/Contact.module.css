@@ -14,7 +14,7 @@
 }
 
 .contact_field {
-  padding: 60px 340px 90px 100px;
+  padding: 40px 195px 40px 40px;
 }
 
 .right_conatct_social_icon {
@@ -60,22 +60,22 @@
   position: absolute;
   background-color: #2d2d2d;
   color: #fff;
-  right: 0;
-  top: 18%;
-  height: 340px;
-  width: 340px;
-  padding: 40px;
+  right: -1px;
+  top: 19%;
+  height: max-content;
+  width: 330px;
+  padding: 30px;
   border-radius: 25px 0 0 25px;
 }
 
 .contact_info_sec h4 {
   letter-spacing: 1px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .info_single {
-  margin: 30px 0px;
-  margin-right: 15px;
+  margin: 20px 0px;
   gap: 10px;
 }
 
@@ -131,6 +131,47 @@ button.contact_form_submit {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1199px) {
+  .contact_field {
+    padding: 35px 31px 35px 31px;
+  }
+
+  .contact_field .form_control {
+    width: 75%;
+  }
+
+  button.contact_form_submit {
+    width: 75%;
+  }
+
+  .contact_info_sec {
+    position: absolute;
+    background-color: #2d2d2d;
+    color: #fff;
+    right: -1px;
+    top: 21%;
+    height: max-content;
+    width: 256px;
+    padding: 25px 25px;
+    border-radius: 25px 0 0 25px;
+  }
+
+  .contact_field h3 {
+    font-size: 26px;
+  }
+  .contact_info_sec h4 {
+    padding-bottom: 0;
+  }
+  .contact_info_sec span {
+    font-size: 13px;
+  }
+  .info_single {
+    margin: 20px 0px;
+    margin-right: 0;
+    gap: 10px;
+  }
+  
+}
 @media only screen and (max-width: 990px) {
   .contact_field {
     padding: 22px 44px 28px 27px;
@@ -175,6 +216,9 @@ button.contact_form_submit {
 @media only screen and (max-width: 767px) {
   .contact_field {
     padding: 25px 18px 236px 18px;
+  }
+  .contact_us{
+    padding: 90px 0;
   }
   .contact_field .form_control {
     width: 100%;
@@ -224,6 +268,10 @@ button.contact_form_submit {
   .contact_inner {
     border-radius: 14px;
   }
+  
+  .contact_us{
+    padding: 70px 0;
+  }
 
   .contact_field {
     padding: 25px 18px 236px 18px;
@@ -244,4 +292,5 @@ button.contact_form_submit {
   .info_single span {
     font-size: 12px;
   }
+
 }

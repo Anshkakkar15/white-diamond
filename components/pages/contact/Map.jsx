@@ -2,7 +2,7 @@ import React from "react";
 
 export const Map = ({ styles }) => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-md-10 offset-md-1">
           <div className={styles.map_inner}>

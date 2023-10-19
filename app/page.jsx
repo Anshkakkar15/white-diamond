@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.homePage}>
       <div className={styles.banner}>
-        <div className="container-fluid">
+        {/* <div className="container-fluid">
           <div data-aos="fade-right" className={styles.main_content}>
             <h1>
               <strong>turning</strong> dreams into <strong>reality</strong>
@@ -27,9 +27,9 @@ export default function Home() {
           <div data-aos="fade-up" className={styles.banner_home}>
             <Image src={bannerHome} alt="home" />
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className={styles.about_section}>
+      {/* <div className={styles.about_section}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
