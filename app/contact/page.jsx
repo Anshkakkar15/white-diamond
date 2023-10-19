@@ -9,12 +9,12 @@ export default function Contact() {
   return (
     <>
       <section className={styles.contact_us}>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col-md-10 offset-md-1">
+            <div className="col-lg-10 offset-lg-1">
               <div className={styles.contact_inner}>
                 <div className="row">
-                  <div className="col-md-10">
+                  <div className="col-lg-10">
                     <div className={styles.contact_form_inner}>
                       <div className={styles.contact_field}>
                         <h3>Contact Us</h3>
@@ -47,7 +47,7 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-2">
+                  <div className="col-lg-2">
                     <div
                       className={`${styles.right_conatct_social_icon} d-flex align-items-end`}
                     >

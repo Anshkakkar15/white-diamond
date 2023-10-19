@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AosInit />
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />
