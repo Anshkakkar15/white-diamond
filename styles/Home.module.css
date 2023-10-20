@@ -1,6 +1,7 @@
 .banner {
-   /* linear-gradient(0deg, #00000023, #000000b3), */
-   background-image: url("https://source.unsplash.com/1450x900?construction,homes,forests");
+   /*  */
+   /* background-image: url("https://source.unsplash.com/1450x900?construction,homes,forests"); */
+   background-image:linear-gradient(0deg, #00000023, #000000b3), url('../assets/download.jfif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
