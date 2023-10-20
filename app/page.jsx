@@ -24,6 +24,7 @@ export default function Home() {
               Get a Free Project Consultation
             </Button>
           </div>
+
           <div data-aos="fade-up" className={styles.banner_home}>
             {/* <Image src={bannerHome} alt="home" /> */}
           </div>
