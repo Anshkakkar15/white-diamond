@@ -1,7 +1,7 @@
 import { Button } from "@/components/Button";
+import { ServiceCard } from "@/components/cards/Service";
 
 import styles from "@/styles/Home.module.css";
-import { Hammer } from "lucide-react";
 
 export default function Home() {
   return (
@@ -39,52 +39,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={styles.card__container}>
-            <div className={styles.card__bx}>
-              <div className={styles.card__data}>
-                <div className={styles.card__icon}>
-                  <Hammer />
-                </div>
-                <div className={styles.card__content}>
-                  <h3>Designing</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.card__bx}>
-              <div className={styles.card__data}>
-                <div className={styles.card__icon}>
-                  <Hammer />
-                </div>
-                <div className={styles.card__content}>
-                  <h3>Designing</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.card__bx}>
-              <div className={styles.card__data}>
-                <div className={styles.card__icon}>
-                  <Hammer />
-                </div>
-                <div className={styles.card__content}>
-                  <h3>Designing</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
+          <div className="card__container">
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
           </div>
         </div>
       </div>

@@ -108,6 +108,16 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 100px 0;
+}
+
 @media screen and (max-width: 1700px) {
   .container-fluid {
     padding-left: 70px !important;
@@ -137,5 +147,8 @@ input[type="number"] {
     padding: 8px 8px;
     font-size: 12px;
     width: 230px;
+  }
+  .card__container {
+    padding: 60px 0;
   }
 }
