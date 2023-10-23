@@ -1,10 +1,7 @@
-import Image from "next/image";
-
 import { Button } from "@/components/Button";
 
 import styles from "@/styles/Home.module.css";
-import bannerHome from "@/assets/banner-home.png";
-import workerImg from "@/assets/worker_img.png";
+import { Hammer } from "lucide-react";
 
 export default function Home() {
   return (
@@ -24,31 +21,73 @@ export default function Home() {
               Get a Free Project Consultation
             </Button>
           </div>
-
-          <div data-aos="fade-up" className={styles.banner_home}>
-            {/* <Image src={bannerHome} alt="home" /> */}
+        </div>
+      </div>
+      <div className={styles.our_services}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className={`col-md-6 ${styles.service_head}`}>
+              <h2>
+                OUR <span>SERVICES</span>{" "}
+              </h2>
+            </div>
+            <div className={`col-md-6 ${styles.service_content}`}>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+                rem quidem explicabo magni voluptates quae perspiciatis, optio
+                et ratione vero consequatur sit
+              </p>
+            </div>
+          </div>
+          <div className={styles.card__container}>
+            <div className={styles.card__bx}>
+              <div className={styles.card__data}>
+                <div className={styles.card__icon}>
+                  <Hammer />
+                </div>
+                <div className={styles.card__content}>
+                  <h3>Designing</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div className={styles.card__bx}>
+              <div className={styles.card__data}>
+                <div className={styles.card__icon}>
+                  <Hammer />
+                </div>
+                <div className={styles.card__content}>
+                  <h3>Designing</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div className={styles.card__bx}>
+              <div className={styles.card__data}>
+                <div className={styles.card__icon}>
+                  <Hammer />
+                </div>
+                <div className={styles.card__content}>
+                  <h3>Designing</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* <div className={styles.about_section}>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6">
-              <div className={styles.img_cont}>
-                <img
-                  src={`https://assets.website-files.com/64ae2a1465888c97a189d576/64ae2a1465888c97a189d5c2_seven-construction-workers-standing-on-white-field-ps-p-800.jpeg`}
-                  alt="worker"
-                />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className={styles.about_content}>
-                <h2>Who We Are</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
