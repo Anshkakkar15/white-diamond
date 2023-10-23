@@ -16,8 +16,6 @@
   list-style: none;
   list-style-type: none;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-family: "Montserrat", sans-serif !important;
 }
@@ -47,7 +45,7 @@ h6 {
 }
 a,
 button {
-  font-family: "Pulp-Regular";
+  font-family: "Montserrat", sans-serif !important;
   font-size: inherit;
   line-height: inherit;
   cursor: pointer;
@@ -94,7 +92,8 @@ body {
   overflow: hidden;
 }
 .web-primary-button:hover {
-  box-shadow: inset 275px 0 0 lightseagreen;
+  box-shadow: inset 275px 0 0 #fd5a0d;
+  color: #fff;
 }
 
 /* Chrome, Safari, Edge, Opera */

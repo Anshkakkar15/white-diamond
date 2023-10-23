@@ -250,7 +250,7 @@ button.contact_form_submit {
     height: max-content;
     width: 90%;
     padding: 25px 25px;
-    border-radius: 14px 14px 0 0;
+    border-radius: 14px 14px;
     top: 67%;
     left: 50%;
     transform: translate(-50%, 0);
