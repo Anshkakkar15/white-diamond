@@ -1,16 +1,17 @@
-.right_conatct_social_icon {
-  background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-}
-
 .contact_us {
-  background-color: #000000e6;
+  background-image: linear-gradient(0deg, #00000023, #000000b3),
+    url("../assets/inner_banner.svg");
   padding: 120px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact_inner {
-  background-color: #ffffff;
+  background-color: #ffffff0a;
   position: relative;
   border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .contact_field {
@@ -22,7 +23,7 @@
 }
 
 .contact_field h3 {
-  color: #000;
+  color: #fff;
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -30,7 +31,7 @@
 }
 
 .contact_field p {
-  color: #000;
+  color: #fff;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -41,26 +42,30 @@
   margin-top: 10px;
   border-radius: 0px;
   border: none;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 11px;
+  background-color: transparent;
+  padding: 10px 15px;
+  color: #fff;
 }
 
 .contact_field .form_control:focus {
   box-shadow: none;
   outline: none;
-  border-bottom: 2px solid #1325e8;
+  border-bottom: 1px solid #ccc;
 }
 
 .contact_field .form_control::placeholder {
   font-size: 13px;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .contact_info_sec {
   position: absolute;
-  background-color: #2d2d2d;
+  background-color: #fd5a0d;
   color: #fff;
-  right: -1px;
+  right: 0px;
   top: 19%;
   height: max-content;
   width: 330px;
@@ -85,7 +90,7 @@
 }
 
 button.contact_form_submit {
-  background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+  background-color: #fd5a0d;
   border: none;
   color: #fff;
   padding: 10px 15px;
@@ -146,7 +151,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #2d2d2d;
+    background-color: #fd5a0d;
     color: #fff;
     right: -1px;
     top: 21%;
@@ -159,7 +164,7 @@ button.contact_form_submit {
   .contact_field h3 {
     font-size: 26px;
   }
-  
+
   .contact_info_sec h4 {
     padding-bottom: 0;
   }
@@ -171,7 +176,6 @@ button.contact_form_submit {
     margin-right: 0;
     gap: 10px;
   }
-  
 }
 @media only screen and (max-width: 990px) {
   .contact_field {
@@ -188,7 +192,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #2d2d2d;
+    background-color: #fd5a0d;
     color: #fff;
     right: -1px;
     top: 21%;
@@ -218,7 +222,7 @@ button.contact_form_submit {
   .contact_field {
     padding: 25px 18px 236px 18px;
   }
-  .contact_us{
+  .contact_us {
     padding: 90px 0;
   }
   .contact_field .form_control {
@@ -241,7 +245,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #2d2d2d;
+    background-color: #fd5a0d;
     color: #fff;
     height: max-content;
     width: 90%;
@@ -269,8 +273,8 @@ button.contact_form_submit {
   .contact_inner {
     border-radius: 14px;
   }
-  
-  .contact_us{
+
+  .contact_us {
     padding: 70px 0;
   }
 
@@ -293,5 +297,4 @@ button.contact_form_submit {
   .info_single span {
     font-size: 12px;
   }
-
 }

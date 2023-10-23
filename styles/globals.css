@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,37 +12,42 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   list-style-type: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 html {
   font-size: 100%;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   scroll-behavior: smooth;
   perspective: 1px;
-	transform-style: preserve-3d;
+  transform-style: preserve-3d;
   /* scroll-padding-top: 100px; */
 }
 
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   /* scroll-padding-top: 100px; */
 }
-h1,h2,h3,h4,h5,h6
-{
-  font-family: 'Montserrat', sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
 }
 a,
 button {
-  font-family: 'Pulp-Regular';
+  font-family: "Pulp-Regular";
   font-size: inherit;
   line-height: inherit;
   cursor: pointer;
@@ -58,10 +63,10 @@ video {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section {
-    overflow: hidden;
+  overflow: hidden;
 }
 img {
   image-rendering: -webkit-optimize-contrast;
@@ -69,29 +74,27 @@ img {
   image-rendering: crisp-edges;
 }
 
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-
-.container-fluid{
-    padding-left: 100px !important;
-    padding-right: 100px !important;
+.container-fluid {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
-.web-primary-button{
+.web-primary-button {
   padding: 10px 20px;
   width: 275px;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  transition: .3s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease-in-out;
   overflow: hidden;
 }
-.web-primary-button:hover{
-  box-shadow:inset 275px 0 0 lightseagreen;
+.web-primary-button:hover {
+  box-shadow: inset 275px 0 0 lightseagreen;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -102,23 +105,23 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1700px) {
   .container-fluid {
     padding-left: 70px !important;
     padding-right: 70px !important;
   }
 }
-@media only screen and (max-width:990px){
-  .container-fluid{
+@media only screen and (max-width: 990px) {
+  .container-fluid {
     padding: 0 50px !important ;
   }
 }
-@media only screen and (max-width:767px){
-  .container-fluid{
+@media only screen and (max-width: 767px) {
+  .container-fluid {
     padding: 0 30px !important ;
   }
   .web-primary-button {
@@ -127,8 +130,8 @@ input[type=number] {
     width: 267px;
   }
 }
-@media only screen and (max-width:575px){
-  .container-fluid{
+@media only screen and (max-width: 575px) {
+  .container-fluid {
     padding: 0 15px !important ;
   }
   .web-primary-button {
@@ -137,6 +140,3 @@ input[type=number] {
     width: 230px;
   }
 }
-
-
-

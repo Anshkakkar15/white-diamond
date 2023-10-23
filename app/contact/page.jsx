@@ -83,7 +83,7 @@ export default function Contact() {
                     className={`d-flex ${styles.info_single} align-items-center`}
                   >
                     <Mail color="#fff" />
-                    <span>info@flightmantra.com</span>
+                    <span>info@construction.com</span>
                   </div>
                   <div
                     className={`d-flex ${styles.info_single} align-items-center`}
