@@ -1,8 +1,9 @@
-import { Button } from "@/components/Button";
+import Image from "next/image";
 import { ServiceCard } from "@/components/cards/Service";
 
 import styles from "@/styles/Home.module.css";
 import { HandIcon, Pencil, Send } from "lucide-react";
+import aboutImg from "@/assets/abous_us.jpg";
 
 export default function Home() {
   return (
@@ -18,15 +19,15 @@ export default function Home() {
               century for the <br />
               research,design & development of materials
             </p>
-            <Button extra={styles.banner_btn}>
+            <button className={`web-primary-button ${styles.banner_btn}`}>
               Get a Free Project Consultation
-            </Button>
+            </button>
           </div>
         </div>
       </div>
       <div className={styles.our_services}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row ">
             <div className={`col-md-6 ${styles.service_head}`}>
               <h2>
                 OUR <span>SERVICES</span>
@@ -90,8 +91,8 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className={`${styles.img_about} mt-3`}>
-                <img
-                  src="https://i.ibb.co/qpz1hvM/About-us.jpg"
+                <Image
+                  src={aboutImg}
                   alt=""
                   className="img-fluid mx-auto d-block"
                 />
@@ -144,6 +145,27 @@ export default function Home() {
                     typesetting industry.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.contact_form}>
+        <div className="container-fluid">
+          <div className={styles.contact_head}>drop us a message</div>
+          <div className={styles.contact_form_Vs}>
+            <div className="row ">
+              <div className={`col-md-6 ${styles.contact_input}`}>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div className={`col-md-6 ${styles.contact_input}`}>
+                <input type="text" placeholder="Email" />
+              </div>
+              <div className={`col-12 ${styles.contact_input}`}>
+                <textarea type="text" placeholder="Message" />
+              </div>
+              <div className="col-12">
+                <button className={styles.form_btn}>Send</button>
               </div>
             </div>
           </div>
