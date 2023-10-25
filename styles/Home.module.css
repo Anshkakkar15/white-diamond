@@ -31,7 +31,7 @@
 .main_content h1 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  border-top: 3px solid #fd5a0d;
+  border-top: 3px solid #ff8d55;
   padding: 22px 0px 0 0;
   font-size: 50px;
   text-transform: uppercase;
@@ -74,7 +74,7 @@
   font-weight: 600;
 }
 .service_head h2 span {
-  color: #fd5a0d;
+  color: #ff8d55;
 }
 .service_content p {
   margin-bottom: 0px;
@@ -94,7 +94,7 @@
   transition: 0.5s ease-in-out;
 }
 .card__bx:hover {
-  border: 1px solid #fd5a0d;
+  border: 1px solid #ff8d55;
 }
 
 .card__bx::before,
@@ -106,9 +106,9 @@
 }
 .card__bx::before {
   inset: -10px 50px;
-  border-top: 4px solid #fd5a0d;
+  border-top: 4px solid #ff8d55;
   transform: skewY(15deg);
-  border-bottom: 4px solid #fd5a0d;
+  border-bottom: 4px solid #ff8d55;
 }
 .card__bx:hover::before {
   inset: -10px 40px;
@@ -116,9 +116,9 @@
 }
 .card__bx::after {
   inset: 60px -10px;
-  border-left: 4px solid #fd5a0d;
+  border-left: 4px solid #ff8d55;
   transform: skew(15deg);
-  border-right: 4px solid #fd5a0d;
+  border-right: 4px solid #ff8d55;
 }
 .card__bx:hover::after {
   inset: 40px -10px;
@@ -150,12 +150,12 @@
 }
 .card__bx .card__data .card__icon {
   color: #181818;
-  box-shadow: 0 0 0 4px #fd5a0d, 0 0 0 6px #fd5a0d;
+  box-shadow: 0 0 0 4px #ff8d55, 0 0 0 6px #ff8d55;
 }
 .card__bx:hover .card__data .card__icon {
   color: #fff;
-  background-color: #fd5a0d;
-  box-shadow: 0 0 0 4px #fff, 0 0 0 300px #fd5a0d;
+  background-color: #ff8d55;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 300px #ff8d55;
 }
 .card__bx .card__data .card__content {
   display: flex;
@@ -190,19 +190,19 @@
   text-decoration: none;
   font-weight: 500;
   margin-top: 10px;
-  border: 2px solid #fd5a0d;
+  border: 2px solid #ff8d55;
   color: #fff;
-  background-color: #fd5a0d;
+  background-color: #ff8d55;
   transition: 0.5s ease-in-out;
 }
 .card__bx:hover .card__data a {
-  color: #fd5a0d;
+  color: #ff8d55;
   background-color: #fff;
 }
 .card__bx:hover .card__data a:hover {
   border-color: #fff;
   color: #fff;
-  background-color: #fd5a0d;
+  background-color: #ff8d55;
 }
 
 .section_all {
@@ -243,7 +243,7 @@
   width: 100px;
 }
 .text_custom {
-  color: #fd5a0d;
+  color: #ff8d55;
 }
 
 .about_icon {
@@ -254,7 +254,7 @@
   display: inline-block;
   background: #fff;
   border-radius: 35px;
-  color: #fd5a0d;
+  color: #ff8d55;
   box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
 }
 
@@ -356,8 +356,8 @@
   margin-top: 15px;
 }
 .form_btn:hover {
-  box-shadow: inset 90px 0 0 #fd5a0d;
-  border: 1px solid #fd5a0d;
+  box-shadow: inset 90px 0 0 #ff8d55;
+  border: 1px solid #ff8d55;
   color: #fff;
 }
 @media only screen and (max-width: 1400px) {

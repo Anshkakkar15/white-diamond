@@ -63,7 +63,7 @@
 
 .contact_info_sec {
   position: absolute;
-  background-color: #fd5a0d;
+  background-color: #ff8d55;
   color: #fff;
   right: 0px;
   top: 19%;
@@ -90,7 +90,7 @@
 }
 
 button.contact_form_submit {
-  background-color: #fd5a0d;
+  background-color: #ff8d55;
   border: none;
   color: #fff;
   padding: 10px 15px;
@@ -151,7 +151,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #fd5a0d;
+    background-color: #ff8d55;
     color: #fff;
     right: -1px;
     top: 21%;
@@ -192,7 +192,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #fd5a0d;
+    background-color: #ff8d55;
     color: #fff;
     right: -1px;
     top: 21%;
@@ -245,7 +245,7 @@ button.contact_form_submit {
 
   .contact_info_sec {
     position: absolute;
-    background-color: #fd5a0d;
+    background-color: #ff8d55;
     color: #fff;
     height: max-content;
     width: 90%;
