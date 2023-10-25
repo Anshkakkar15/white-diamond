@@ -205,6 +205,106 @@
   background-color: #fd5a0d;
 }
 
+.section_all {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+.section_title {
+  font-weight: 700;
+}
+.section_title_all h3 {
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #181818;
+}
+
+.section_subtitle {
+  margin-bottom: 0px;
+  color: #505050;
+  line-height: 28px;
+  margin-top: 10px;
+  max-width: 550px;
+}
+
+.section_title_border {
+  background-color: #000;
+  height: 1 3px;
+  width: 44px;
+}
+
+.section_title-border-white {
+  background-color: #fff;
+  height: 2px;
+  width: 100px;
+}
+.text_custom {
+  color: #fd5a0d;
+}
+
+.about_icon {
+  font-size: 22px;
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 35px;
+  color: #fd5a0d;
+  box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+}
+
+.about_header_main .about_heading {
+  max-width: 550px;
+  font-size: 24px;
+  color: #181818;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+.abt_head {
+  font-weight: 600;
+  font-size: 18px;
+}
+.about_text {
+  margin-bottom: 0px;
+  color: #505050;
+  line-height: 28px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.about_icon span {
+  position: relative;
+  top: -10px;
+}
+.about_content_box_all {
+  margin-top: 10px;
+  padding: 28px;
+}
+.about_icon_head {
+  font-size: 18px;
+  color: #181818;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.about_icon_desc {
+  margin-bottom: 0px;
+  color: #505050;
+  margin-top: 8px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 1400px) {
   .banner {
     height: 90vh;
@@ -415,5 +515,36 @@
   }
   .card__data p {
     font-size: 13px;
+  }
+  .section_all {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section_title_all h3 {
+    font-size: 23px;
+  }
+  .section_subtitle {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .abt_head {
+    font-size: 16px;
+  }
+  .about_header_main .about_heading {
+    font-size: 17px;
+  }
+  .about_text {
+    margin-bottom: 0px;
+    color: #505050;
+    line-height: 24px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .img_about {
+    margin-top: 34px !important;
+  }
+  .about_content_box_all {
+    margin-top: 8px;
+    padding: 10px;
   }
 }
