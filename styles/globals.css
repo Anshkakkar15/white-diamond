@@ -239,6 +239,24 @@ input[type="number"] {
   justify-content: center;
 }
 
+.btn_box a {
+  padding: 8px 25px;
+  width: max-content;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  color: #181818;
+  border: 1px solid #181818;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.btn_box a:hover {
+  box-shadow: inset 150px 0 0 #ff8d55;
+  border: 1px solid #ff8d55;
+  color: #fff;
+}
+
 .about_section .image_column .image_1 img {
   border-radius: 15px;
 }

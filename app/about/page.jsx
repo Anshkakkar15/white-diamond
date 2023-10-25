@@ -3,6 +3,7 @@ import React from "react";
 import { Banner } from "@/components/Banner";
 
 import styles from "@/styles/About.module.css";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -37,9 +38,7 @@ export default function About() {
                   veniam doloribus, tenetur dolor est quisquam nostrum.
                 </div>
                 <div className="btn_box">
-                  <a href="#" className="">
-                    Contact Us
-                  </a>
+                  <Link href="/contact">Contact Us</Link>
                 </div>
               </div>
             </div>
