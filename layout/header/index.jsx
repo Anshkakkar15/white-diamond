@@ -44,10 +44,10 @@ export const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li className={styles.nav_items}>
-              <Link href="#">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className={styles.nav_items}>
-              <Link href="#">Work</Link>
+              <Link href="/work">Work</Link>
             </li>
             <li className={styles.nav_items}>
               <Link href="/contact">Contact Us</Link>

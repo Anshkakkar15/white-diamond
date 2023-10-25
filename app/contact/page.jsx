@@ -7,14 +7,11 @@ import { Banner } from "@/components/Banner";
 
 export default function Contact() {
   return (
-    <>
-      <div>
-        <Banner heading={"Contact Us"} />
-      </div>
-
+    <main>
+      <Banner heading={"Contact Us"} />
       <section className={styles.map_sec}>
         <Map styles={styles} />
       </section>
-    </>
+    </main>
   );
 }
