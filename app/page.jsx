@@ -99,8 +99,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-3">
-            <div className="col-lg-4">
+          <div className="row justify-content-center mt-3">
+            <div className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
@@ -132,7 +132,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
