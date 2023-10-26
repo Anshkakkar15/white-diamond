@@ -15,7 +15,9 @@ export const Banner = ({ heading }) => {
         <div className={styles.sideImg}>
           <Image src={brick} />
         </div>
-        <h1>{heading}</h1>
+        <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">
+          {heading}
+        </h1>
         <div className={styles.sideImg}>
           <Image src={compass} />
         </div>

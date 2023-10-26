@@ -32,12 +32,18 @@ export default function Home() {
       <div className={styles.our_services}>
         <div className="container-fluid">
           <div className="row ">
-            <div className={`col-md-6 ${styles.service_head}`}>
+            <div
+              data-aos="fade-right"
+              className={`col-md-6 ${styles.service_head}`}
+            >
               <h2>
                 OUR <span>SERVICES</span>
               </h2>
             </div>
-            <div className={`col-md-6 ${styles.service_content}`}>
+            <div
+              data-aos="fade-left"
+              className={`col-md-6 ${styles.service_content}`}
+            >
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
                 rem quidem explicabo magni voluptates quae perspiciatis, optio
@@ -57,11 +63,17 @@ export default function Home() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12">
-              <div className={`${styles.section_title_all} text-center`}>
+              <div
+                data-aos="fade-up"
+                className={`${styles.section_title_all} text-center`}
+              >
                 <h3>
                   OUR <span className={styles.text_custom}>MISSION</span>
                 </h3>
-                <p className={`${styles.section_subtitle} mx-auto text-muted`}>
+                <p
+                  data-aos="fade-up"
+                  className={`${styles.section_subtitle} mx-auto text-muted`}
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
@@ -69,7 +81,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row align-items-center mt-3">
+          <div data-aos="fade-up" className="row align-items-center mt-3">
             <div className="col-lg-6">
               <div className={`${styles.about_header_main} mt-3`}>
                 <div className="about_icon_box">
@@ -105,7 +117,7 @@ export default function Home() {
           </div>
 
           <div className="row justify-content-center mt-3">
-            <div className="col-lg-4 col-md-6">
+            <div data-aos="fade-down" className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
@@ -120,7 +132,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div data-aos="fade-down" className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
@@ -137,7 +149,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div data-aos="fade-down" className="col-lg-4 col-md-6">
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
@@ -154,7 +166,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.contact_form}>
+      <div data-aos="fade-up" className={styles.contact_form}>
         <div className="container-fluid">
           <div className={styles.contact_head}>drop us a message</div>
           <div className={styles.contact_form_Vs}>

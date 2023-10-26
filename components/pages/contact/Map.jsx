@@ -2,7 +2,11 @@ import React from "react";
 
 export const Map = ({ styles }) => {
   return (
-    <div className="container-fluid">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      className="container-fluid"
+    >
       <div className="row">
         <div className="col-md-10 offset-md-1">
           <div className={styles.map_inner}>

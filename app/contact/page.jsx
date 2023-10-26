@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <Banner heading={"Contact Us"} />
-      <div class="container-fluid">
+      <div data-aos="fade-right" class="container-fluid">
         <div class={styles.screen}>
           <div class={styles.screen_body}>
             <div class={`${styles.screen_body_item} ${styles.left}`}>

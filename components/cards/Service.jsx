@@ -5,7 +5,7 @@ import styles from "@/styles/Home.module.css";
 
 export const ServiceCard = () => {
   return (
-    <div className={styles.card__bx}>
+    <div data-aos="zoom-in" className={styles.card__bx}>
       <div className={styles.card__data}>
         <div className={styles.card__icon}>
           <Hammer />

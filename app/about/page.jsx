@@ -11,7 +11,7 @@ export default function About() {
       <Banner heading={"About Us"} />
       <section className={styles.about_section}>
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div data-aos="fade-up" className="row align-items-center">
             <div className={`${styles.content_column} col-lg-7  order-2`}>
               <div className={styles.inner_column}>
                 <div className={styles.sec_title}>
@@ -55,35 +55,38 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className={`${styles.sec_title} ${styles.goal_v}`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.sec_title} ${styles.goal_v}`}
+          >
             <span className={styles.title}>Our Future Goal</span>
             <h2>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repellat, perspiciatis.
             </h2>
           </div>
-          <div className={styles.text}>
+          <div data-aos="fade-up" className={styles.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             quam error ea, accusantium natus deserunt debitis minus, maxime
             nostrum temporibus beatae! Qui?
           </div>
-          <div className={styles.text}>
+          <div data-aos="fade-up" className={styles.text}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
             vero sint quam quisquam facilis beatae.
           </div>
-          <div className={styles.text}>
+          <div data-aos="fade-up" className={styles.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
             temporibus ipsam doloremque deleniti sed minus ullam impedit enim
             eius iure. Molestias, repellendus? Dolores, officiis eos. Lorem,
             ipsum dolor sit amet consectetur adipisicing elit. Dolore provident
             facilis at?
           </div>
-          <div className={styles.text}>
+          <div data-aos="fade-up" className={styles.text}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Laboriosam, ratione blanditiis? Facere, reprehenderit? Sunt,
             excepturi?
           </div>
-          <div className={styles.text}>
+          <div data-aos="fade-up" className={styles.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non,
             quae recusandae quia qui beatae?
           </div>

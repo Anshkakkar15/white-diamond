@@ -136,6 +136,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #fff;
 }
 .card__bx .card__data .card__icon {
   height: 80px;
