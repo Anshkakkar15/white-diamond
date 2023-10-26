@@ -29,7 +29,7 @@ export const Header = () => {
           src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Bluestar_%28bus_company%29_logo.svg/1280px-Bluestar_%28bus_company%29_logo.svg.png"
           alt="Company Logo"
         /> */}
-          <h2>Logo</h2>
+          <Link href={"/"}>Logo</Link>
           <div
             onClick={() => setIsActive(true)}
             className={`${styles.menu_toggle}`}

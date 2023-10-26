@@ -11,24 +11,24 @@ export default function About() {
       <Banner heading={"About Us"} />
       <section className={styles.about_section}>
         <div className="container-fluid">
-          <div data-aos="fade-up" className="row align-items-center">
+          <div className="row align-items-center">
             <div className={`${styles.content_column} col-lg-7  order-2`}>
               <div className={styles.inner_column}>
-                <div className={styles.sec_title}>
+                <div data-aos="fade-up" className={styles.sec_title}>
                   <span className={styles.title}>About Whitediamond</span>
                   <h2>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vero, aliquid?
                   </h2>
                 </div>
-                <div className={styles.text}>
+                <div data-aos="fade-up" className={styles.text}>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Blanditiis quam illum suscipit dolores quidem corrupti sunt
                   assumenda. Voluptates delectus cupiditate sequi ea nisi
                   necessitatibus fugiat! Lorem, ipsum dolor sit amet consectetur
                   adipisicing elit. Nesciunt, porro.
                 </div>
-                <div className={styles.text}>
+                <div data-aos="fade-up" className={styles.text}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Minima officiis laborum, aperiam repellat debitis similique
                   doloremque eaque, quam necessitatibus praesentium facilis
@@ -37,14 +37,14 @@ export default function About() {
                   corrupti impedit cum animi possimus illo a velit excepturi
                   veniam doloribus, tenetur dolor est quisquam nostrum.
                 </div>
-                <div className={styles.btn_box}>
+                <div data-aos="fade-up" className={styles.btn_box}>
                   <Link href="/contact">Contact Us</Link>
                 </div>
               </div>
             </div>
 
             <div className={`${styles.image_column} col-lg-5 `}>
-              <div className={styles.inner_column}>
+              <div data-aos="fade-up" className={styles.inner_column}>
                 <div className={styles.image_1}>
                   <img
                     title="image"

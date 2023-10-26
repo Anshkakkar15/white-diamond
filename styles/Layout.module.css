@@ -18,11 +18,13 @@
   overflow: hidden;
 }
 
-.navigationbar h2 {
+.navigationbar a {
   /* height: 16px; */
   width: auto;
   justify-self: start;
   color: #fff;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .navigationbar ul {
