@@ -7,7 +7,11 @@ import aboutImg from "@/assets/abous_us.jpg";
 
 export default function Home() {
   return (
-    <div className={styles.homePage}>
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className={styles.homePage}
+    >
       <div className={styles.banner}>
         <div className="container-fluid">
           <div data-aos="fade-right" className={styles.main_content}>

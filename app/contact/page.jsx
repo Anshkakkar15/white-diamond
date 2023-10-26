@@ -7,7 +7,7 @@ import { Banner } from "@/components/Banner";
 
 export default function Contact() {
   return (
-    <main>
+    <main data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <Banner heading={"Contact Us"} />
       <div class="container-fluid">
         <div class={styles.screen}>
