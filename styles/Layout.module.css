@@ -188,12 +188,14 @@
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-  font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
   margin-right: 3px;
   margin-bottom: 5px;
+}
+.footer_icons a svg {
+  padding: 4px;
 }
 .footer_company_about p {
   margin-bottom: 0;

@@ -1,7 +1,14 @@
 import React from "react";
 
 import styles from "@/styles/Layout.module.css";
-import { Mail, MapPin, Phone } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  TwitterIcon,
+} from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -60,16 +67,13 @@ export const Footer = () => {
 
             <div className={styles.footer_icons}>
               <a href="#">
-                <i className="fa fa-facebook"></i>
+                <Facebook />
               </a>
               <a href="#">
-                <i className="fa fa-twitter"></i>
+                <Instagram />
               </a>
               <a href="#">
-                <i className="fa fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i className="fa fa-github"></i>
+                <TwitterIcon />
               </a>
             </div>
           </div>
