@@ -16,7 +16,6 @@ export const ServiceCard = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <a href="#">Read More</a>
         </div>
       </div>
     </div>
