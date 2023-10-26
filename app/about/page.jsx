@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <Banner heading={"About Us"} />
       <section className={styles.about_section}>
         <div className="container-fluid">
@@ -89,6 +89,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

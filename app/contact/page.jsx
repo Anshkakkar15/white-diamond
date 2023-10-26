@@ -7,7 +7,7 @@ import { Banner } from "@/components/Banner";
 
 export default function Contact() {
   return (
-    <main data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <Banner heading={"Contact Us"} />
       <div class="container-fluid">
         <div class={styles.screen}>
@@ -49,6 +49,6 @@ export default function Contact() {
       <section className={styles.map_sec}>
         <Map styles={styles} />
       </section>
-    </main>
+    </div>
   );
 }

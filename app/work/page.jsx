@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Work() {
   return (
-    <main data-aos="fade-up" data-aos-anchor-placement="top">
+    <div data-aos="fade-up" data-aos-anchor-placement="top">
       <Banner heading={"Our Work"} />
-    </main>
+    </div>
   );
 }
