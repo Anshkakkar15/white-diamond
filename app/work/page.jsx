@@ -20,9 +20,9 @@ export default function Work() {
             return (
               <div key={i} className="col-xl-3 col-lg-4 col-md-6 ">
                 <div
-                  onClick={() =>
-                    router.push(`/work/${data?.heading?.replaceAll(" ", "_")}`)
-                  }
+                  // onClick={() =>
+                  //   router.push(`/work/${data?.heading?.replaceAll(" ", "_")}`)
+                  // }
                 >
                   <div className="box-s">
                     <img
