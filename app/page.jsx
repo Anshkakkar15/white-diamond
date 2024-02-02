@@ -1,11 +1,29 @@
+"use client";
 import Image from "next/image";
 import { ServiceCard } from "@/components/cards/Service";
 
 import styles from "@/styles/Home.module.css";
 import { HandIcon, Pencil, Send } from "lucide-react";
 import aboutImg from "@/assets/abous_us.jpg";
+import { useState } from "react";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
     <div
       data-aos="fade-up"
@@ -170,20 +188,47 @@ export default function Home() {
         <div className="container-fluid">
           <div className={styles.contact_head}>drop us a message</div>
           <div className={styles.contact_form_Vs}>
-            <div className="row ">
-              <div className={`col-md-6 ${styles.contact_input}`}>
-                <input type="text" placeholder="Your Name" />
+            <form onSubmit={handleSubmit}>
+              <div className="row ">
+                <div className={`col-md-6 ${styles.contact_input}`}>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    onChange={handleChange}
+                    name="name"
+                    value={formData?.name}
+                    required
+                  />
+                </div>
+                <div className={`col-md-6 ${styles.contact_input}`}>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    onChange={handleChange}
+                    name="email"
+                    value={formData?.email}
+                    required
+                  />
+                </div>
+                <div className={`col-12 ${styles.contact_input}`}>
+                  <textarea
+                    type="text"
+                    placeholder="Message"
+                    onChange={handleChange}
+                    name="message"
+                    value={formData?.message}
+                    required
+                  />
+                </div>
+                <div className="col-12">
+                  <input
+                    type="submit"
+                    value="submit"
+                    className={styles.form_btn}
+                  />
+                </div>
               </div>
-              <div className={`col-md-6 ${styles.contact_input}`}>
-                <input type="text" placeholder="Email" />
-              </div>
-              <div className={`col-12 ${styles.contact_input}`}>
-                <textarea type="text" placeholder="Message" />
-              </div>
-              <div className="col-12">
-                <button className={styles.form_btn}>Send</button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
   perspective: 1px;
   transform-style: preserve-3d;
-  /* scroll-padding-top: 100px; */
+  scroll-padding-top: 100px;
 }
 
 body {

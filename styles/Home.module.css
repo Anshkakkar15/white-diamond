@@ -93,11 +93,11 @@
   border: 1px solid #181818;
   transition: 0.5s ease-in-out;
 }
-.card__bx:hover {
+/* .card__bx:hover {
   border: 1px solid #ff8d55;
-}
+} */
 
-.card__bx::before,
+/* .card__bx::before,
 .card__bx::after {
   content: "";
   position: absolute;
@@ -123,7 +123,7 @@
 .card__bx:hover::after {
   inset: 40px -10px;
   transform: skew(0deg);
-}
+} */
 .card__bx .card__data {
   position: relative;
   display: flex;
@@ -355,9 +355,10 @@
   color: #181818;
   border: 1px solid #181818;
   margin-top: 15px;
+  text-transform: capitalize;
 }
 .form_btn:hover {
-  box-shadow: inset 90px 0 0 #ff8d55;
+  box-shadow: inset 150px 0 0 #ff8d55;
   border: 1px solid #ff8d55;
   color: #fff;
 }
