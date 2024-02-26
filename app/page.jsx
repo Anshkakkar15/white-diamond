@@ -3,11 +3,16 @@ import Image from "next/image";
 import { ServiceCard } from "@/components/cards/Service";
 
 import styles from "@/styles/Home.module.css";
-import { HandIcon, Pencil, Send } from "lucide-react";
 import aboutImg from "@/assets/abous_us.jpg";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { services } from "@/mock/home";
+import { GiGrowth } from "react-icons/gi";
+import { SlBadge } from "react-icons/sl";
+import { TbBulb } from "react-icons/tb";
 
 export default function Home() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,7 +46,10 @@ export default function Home() {
               century for the <br />
               research,design & development of materials
             </p>
-            <button className={`web-primary-button ${styles.banner_btn}`}>
+            <button
+              onClick={() => router.push("/contact")}
+              className={`web-primary-button ${styles.banner_btn}`}
+            >
               Get a Free Project Consultation
             </button>
           </div>
@@ -63,17 +71,17 @@ export default function Home() {
               className={`col-md-6 ${styles.service_content}`}
             >
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                rem quidem explicabo magni voluptates quae perspiciatis, optio
-                et ratione vero consequatur sit
+                Discover unparalleled expertise with our diverse service
+                portfolio. From cutting-edge solutions to personalized support,
+                we unlock excellence to meet your unique needs and exceed
+                expectations.
               </p>
             </div>
           </div>
           <div className="card__container">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            {services?.map((service) => (
+              <ServiceCard service={service} />
+            ))}
           </div>
         </div>
       </div>
@@ -92,34 +100,38 @@ export default function Home() {
                   data-aos="fade-up"
                   className={`${styles.section_subtitle} mx-auto text-muted`}
                 >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Empowering Futures, Igniting Possibilities – Our Mission, Your
+                  Triumph.
                 </p>
               </div>
             </div>
           </div>
-
           <div data-aos="fade-up" className="row align-items-center mt-3">
             <div className="col-lg-6">
               <div className={`${styles.about_header_main} mt-3`}>
                 <div className="about_icon_box">
                   <p className={`${styles.text_custom} ${styles.abt_head}`}>
-                    Lorem Ipsum is simply dummy text
+                    Crafting Dreams, Constructing Realities: Our Mission in
+                    Building Your Tomorrow.
                   </p>
                 </div>
                 <h4 className={`${styles.about_heading} text-capitalize`}>
-                  Lorem Ipsum is simply dummy text of the printing industry.
+                  We do it with perfection because it’s our passion
                 </h4>
                 <p className={styles.about_text}>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old.
+                  At White Diamond, perfection is not just a goal; it's our
+                  passion. From foundation to finish, we infuse every project
+                  with dedicated craftsmanship, turning blueprints into
+                  masterpieces..
                 </p>
 
                 <p className={styles.about_text}>
-                  Richard McClintock, a Latin professor at Hampden-Sydney
-                  College in Virginia, looked up one of the more obscure Latin
-                  words, consectetur, from a Lorem Ipsum passage.
+                  In the realm of construction, our passion for perfection is
+                  the driving force behind each endeavor. With meticulous
+                  attention to detail and unwavering dedication, we transform
+                  architectural visions into reality, ensuring that every
+                  project not only stands with structural integrity but also
+                  resonates with the essence of our commitment to excellence.
                 </p>
               </div>
             </div>
@@ -139,12 +151,11 @@ export default function Home() {
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
-                    <Pencil />
+                    <GiGrowth />
                   </div>
-                  <h5 className={styles.about_icon_head}>Creative Design</h5>
+                  <h5 className={styles.about_icon_head}>Empowering Growth</h5>
                   <p className={styles.about_icon_desc}>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Constructing progress, shaping futures with every project
                   </p>
                 </div>
               </div>
@@ -154,14 +165,14 @@ export default function Home() {
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
-                    <HandIcon />
+                    <TbBulb />
                   </div>
                   <h5 className={styles.about_icon_head}>
-                    We make Best Result
+                    Innovating Tomorrow
                   </h5>
                   <p className={styles.about_icon_desc}>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Redefining construction through cutting-edge solutions and
+                    visionary approaches.
                   </p>
                 </div>
               </div>
@@ -171,12 +182,14 @@ export default function Home() {
               <div className={styles.about_content_box_all}>
                 <div className="about_detail text-center">
                   <div className={styles.about_icon}>
-                    <Send />
+                    <SlBadge />
                   </div>
-                  <h5 className={styles.about_icon_head}>best platform </h5>
+                  <h5 className={styles.about_icon_head}>
+                    Commitment to Lasting Quality
+                  </h5>
                   <p className={styles.about_icon_desc}>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Building legacies, ensuring enduring excellence in every
+                    structure crafted.
                   </p>
                 </div>
               </div>
