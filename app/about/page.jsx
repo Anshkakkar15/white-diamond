@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 import { Banner } from "@/components/Banner";
 
+import aboutUs from "@/assets/about-us.png";
 import styles from "@/styles/About.module.css";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -16,26 +18,26 @@ export default function About() {
               <div className={styles.inner_column}>
                 <div data-aos="fade-up" className={styles.sec_title}>
                   <span className={styles.title}>About Whitediamond</span>
-                  <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vero, aliquid?
-                  </h2>
+                  <h2>A group of dependable and skilled contractors.</h2>
                 </div>
                 <div data-aos="fade-up" className={styles.text}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis quam illum suscipit dolores quidem corrupti sunt
-                  assumenda. Voluptates delectus cupiditate sequi ea nisi
-                  necessitatibus fugiat! Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Nesciunt, porro.
+                  A seasoned and trustworthy team of contractors, possessing
+                  extensive experience in their respective fields, is crucial
+                  for ensuring the success of any project. These professionals
+                  bring a wealth of expertise and reliability, contributing to
+                  the seamless execution of tasks and the achievement of project
+                  goals. Their collective skills and proven track record instill
+                  confidence in their ability to deliver high-quality results.
                 </div>
                 <div data-aos="fade-up" className={styles.text}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima officiis laborum, aperiam repellat debitis similique
-                  doloremque eaque, quam necessitatibus praesentium facilis
-                  numquam laudantium sapiente nulla incidunt laboriosam
-                  asperiores earum architecto? Magni vel expedita architecto,
-                  corrupti impedit cum animi possimus illo a velit excepturi
-                  veniam doloribus, tenetur dolor est quisquam nostrum.
+                  In the realm of construction and project management, the
+                  significance of a reliable and experienced contractor team
+                  cannot be overstated. Their proficiency not only streamlines
+                  the workflow but also minimizes the likelihood of setbacks or
+                  errors. Clients can have peace of mind knowing that the
+                  project is in the hands of capable individuals who have
+                  navigated various challenges, demonstrating a consistent
+                  commitment to excellence.
                 </div>
                 <div data-aos="fade-up" className={styles.btn_box}>
                   <Link href="/contact">Contact Us</Link>
@@ -46,11 +48,7 @@ export default function About() {
             <div className={`${styles.image_column} col-lg-5 `}>
               <div data-aos="fade-up" className={styles.inner_column}>
                 <div className={styles.image_1}>
-                  <img
-                    title="image"
-                    src="https://source.unsplash.com/500x500?team"
-                    alt=""
-                  />
+                  <Image title="image" src={aboutUs} alt="" />
                 </div>
               </div>
             </div>
@@ -61,34 +59,27 @@ export default function About() {
           >
             <span className={styles.title}>Our Future Goal</span>
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Repellat, perspiciatis.
+              Aspiring Towards Our Future Excellence: Visionary Goals and
+              Strategic Milestones
             </h2>
           </div>
           <div data-aos="fade-up" className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            quam error ea, accusantium natus deserunt debitis minus, maxime
-            nostrum temporibus beatae! Qui?
+            Charting a course for success, our future goal envisions
+            unparalleled excellence and strategic milestones, propelling us
+            towards a brighter tomorrow.
           </div>
           <div data-aos="fade-up" className={styles.text}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            vero sint quam quisquam facilis beatae.
+            Embracing innovation and ambition, our future goal is a beacon
+            guiding us towards sustained excellence and transformative
+            achievements.
           </div>
           <div data-aos="fade-up" className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            temporibus ipsam doloremque deleniti sed minus ullam impedit enim
-            eius iure. Molestias, repellendus? Dolores, officiis eos. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Dolore provident
-            facilis at?
+            Forging a path to excellence through visionary planning and
+            unwavering commitment to strategic milestones.
           </div>
           <div data-aos="fade-up" className={styles.text}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Laboriosam, ratione blanditiis? Facere, reprehenderit? Sunt,
-            excepturi?
-          </div>
-          <div data-aos="fade-up" className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non,
-            quae recusandae quia qui beatae?
+            In pursuit of our future goal, we aim to set new benchmarks,
+            fostering a legacy of innovation, growth, and enduring success.s
           </div>
         </div>
       </section>

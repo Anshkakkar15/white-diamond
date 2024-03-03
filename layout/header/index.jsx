@@ -4,6 +4,8 @@ import Link from "next/link";
 
 import styles from "@/styles/Layout.module.css";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import logo from "@/assets/logo.svg";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -25,11 +27,9 @@ export const Header = () => {
       <div className="container-fluid">
         <div className={styles.grad_bar}></div>
         <div className={styles.navigationbar}>
-          {/* <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Bluestar_%28bus_company%29_logo.svg/1280px-Bluestar_%28bus_company%29_logo.svg.png"
-          alt="Company Logo"
-        /> */}
-          <Link href={"/"}>Logo</Link>
+          <Link href={"/"}>
+            <Image src={logo} alt="Company Logo" />
+          </Link>
           <div
             onClick={() => setIsActive(true)}
             className={`${styles.menu_toggle}`}

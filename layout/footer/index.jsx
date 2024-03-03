@@ -10,28 +10,32 @@ import {
   TwitterIcon,
 } from "lucide-react";
 
+import logo from "@/assets/logo.svg";
+import Image from "next/image";
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <div className={styles.footer_distributed}>
       <div className={`container-fluid `}>
         <div className={styles.footer_rows}>
           <div className={styles.footer_left}>
-            <h3>
-              Company<span>logo</span>
-            </h3>
+            <Image
+              src={logo}
+              alt="Company Logo"
+              className={styles.footer_logo}
+            />
 
             <p className={styles.footer_links}>
-              <a href="#" className={styles.link_1}>
+              <Link href="/" className={styles.link_1}>
                 Home
-              </a>
+              </Link>
 
-              <a href="#">About</a>
+              <Link href="/about">About</Link>
 
-              <a href="#">Work</a>
+              <Link href="/work">Work</Link>
 
-              <a href="#">Services</a>
-
-              <a href="#">Contact</a>
+              <Link href="/contact">Contact</Link>
             </p>
           </div>
 
@@ -39,19 +43,24 @@ export const Footer = () => {
             <div className="d-flex align-items-start gap-3 mb-3">
               <MapPin color="#fff" />
               <p>
-                <span>444 S. Cedros Ave</span> Solana Beach, California
+                <span>Winnipeg, Manitaba</span>
               </p>
             </div>
 
             <div className="d-flex align-items-start gap-3 mb-3">
               <Phone color="#fff" />
-              <p>+1.555.555.5555</p>
+              {/* <p>+1.555.555.5555</p> */}
+              <p>
+                <a href="tel:2363326530">(236) 332 6530</a>
+              </p>
             </div>
 
             <div className="d-flex align-items-start gap-3 mb-3">
               <Mail color="#fff" />
               <p>
-                <a href="mailto:support@company.com">support@company.com</a>
+                <a href="mailto:info.whitediamond01@gmail.com">
+                  info.whitediamond01@gmail.com
+                </a>
               </p>
             </div>
           </div>
@@ -60,20 +69,23 @@ export const Footer = () => {
             <div className={styles.footer_company_about}>
               <span>About the company</span>
               <p>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-                euismod convallis velit, eu auctor lacus vehicula sit amet.
+                Pioneering excellence in construction, we craft a legacy of
+                quality and reliability. YOU DREAM IT WE BUILD IT !
               </p>
             </div>
 
             <div className={styles.footer_icons}>
-              <a href="#">
-                <Facebook />
+              <a href="tel:2363326530">
+                <Phone />
               </a>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/white_diamond_renovation/"
+              >
                 <Instagram />
               </a>
-              <a href="#">
-                <TwitterIcon />
+              <a href="mailto:info.whitediamond01@gmail.com">
+                <Mail />
               </a>
             </div>
           </div>
